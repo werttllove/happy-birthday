@@ -1,0 +1,13 @@
+.heart {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
