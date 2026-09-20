@@ -1,0 +1,79 @@
+/* ===== ОСНОВНОЕ СЕРДЦЕ ===== */
+
+.heart {
+    width: 80px;
+    height: 80px;
+    background: #ff4d6d;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 100px auto;
+    animation: heartbeat 1.2s infinite ease-in-out;
+    box-shadow: 0 0 30px rgba(255, 77, 109, 0.6);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: #ff4d6d;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -40px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 40px;
+}
+
+
+/* ===== АНИМАЦИЯ ===== */
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1.12);
+    }
+}
+
+
+/* ===== ТЕЛЕФОН ===== */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .heart {
+        width: 60px;
+        height: 60px;
+        margin: 60px auto;
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    .heart::before {
+        top: -30px;
+    }
+
+    .heart::after {
+        left: 30px;
+    }
+}
+
+body {
+    background: pink;
+}
