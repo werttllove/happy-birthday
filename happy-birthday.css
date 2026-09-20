@@ -1,3 +1,6 @@
+
+/* ===== ОСНОВНОЕ СЕРДЦЕ ===== */
+
 .heart {
     width: 80px;
     height: 80px;
@@ -29,6 +32,9 @@
     left: 40px;
 }
 
+
+/* ===== АНИМАЦИЯ ===== */
+
 @keyframes heartbeat {
     0%, 100% {
         transform: rotate(-45deg) scale(1);
@@ -36,5 +42,35 @@
 
     50% {
         transform: rotate(-45deg) scale(1.12);
+    }
+}
+
+
+/* ===== ТЕЛЕФОН ===== */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .heart {
+        width: 60px;
+        height: 60px;
+        margin: 60px auto;
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    .heart::before {
+        top: -30px;
+    }
+
+    .heart::after {
+        left: 30px;
     }
 }
