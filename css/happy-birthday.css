@@ -31,6 +31,7 @@ body {
 
 .welcome-content {
     max-width: 700px;
+    transform: translateY(-60px);
 }
 
 
@@ -49,6 +50,10 @@ body {
     line-height: 1.6;
 
     margin-bottom: 45px;
+}
+
+.welcome-content p strong {
+    font-weight: bold;
 }
 
 
@@ -97,9 +102,13 @@ body {
 
 @media (max-width: 600px) {
 
-    .welcome-content h1 {
-        font-size: 38px;
-    }
+.welcome-content {
+    transform: translateY(-50px);
+}
+
+.welcome-content h1 {
+    white-space: nowrap;
+}
 
     .welcome-content p {
         font-size: 19px;
