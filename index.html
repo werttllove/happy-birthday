@@ -13,7 +13,7 @@
 <body>
 
     <!-- ГЛАВНЫЙ ЭКРАН -->
-    <section class="screen welcome-screen">
+    <section class="screen welcome-screen active">
 
         <div class="welcome-content">
 
@@ -34,9 +34,223 @@
 
     </section>
 
+    <!-- ЭКРАН 1 -->
+<section class="screen memory-screen">
+
+    <div class="memory-content">
+
+        <div class="progress">
+            01 / 18
+        </div>
+
+        <h2>Итак, начнём ❤️</h2>
+
+        <p>
+            Вспомни дату, когда мы впервые пошли гулять
+        </p>
+
+        <input
+            type="text"
+            id="date-answer"
+            placeholder="дата.месяц.год"
+            maxlength="10"
+        >
+
+        <button class="continue-button" id="check-date">
+            Продолжить →
+        </button>
+
+        <p class="answer-message" id="answer-message"></p>
+
+    </div>
+
+</section>
+
+         <!-- ЭКРАН 2 -->
+<section class="screen photos-screen">
+
+    <div class="photos-content">
+
+        <div class="progress">
+            02 / 18
+        </div>
+
+        <h2>Вспомним наше первое общение ❤️</h2>
+
+        <div class="photo-counter" id="photo-counter">
+            1 / 5
+        </div>
+
+        <div class="photo-wrapper">
+
+            <img
+                id="memory-photo"
+                src="images/photo1.jpg"
+                alt="Наши первые сообщения"
+            >
+
+        </div>
+
+        <p class="photo-comment" id="photo-comment">
+            Кажется, всё начиналось довольно просто...
+        </p>
+
+        <div class="photo-navigation">
+
+            <button id="prev-photo">
+                ←
+            </button>
+
+            <button id="next-photo">
+                →
+            </button>
+
+        </div>
+
+        <div class="next-question">
+
+            <p>
+                Первый вопрос был достаточно лёгкий,
+                второй будет посложнее.
+            </p>
+
+            <p>
+                Вспомни дату, когда я первый раз
+                пришёл к тебе домой.
+            </p>
+
+            <input
+                type="text"
+                id="home-date-answer"
+                placeholder="дата.месяц.год"
+                maxlength="10"
+            >
+
+            <button id="check-home-date">
+                Продолжить →
+            </button>
+
+            <p id="home-date-message"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+         <!-- ЭКРАН 3 -->
+<section class="screen telegram-screen">
+    <div class="telegram-content">
+
+        <div class="progress">03 / 18</div>
+
+        <h2>А вот это я хочу тебе показать ❤️</h2>
+
+        <div class="telegram-circle">
+            <video
+                src="video/telegram-circle.mp4"
+                controls
+                playsinline>
+            </video>
+        </div>
+
+        <button class="continue-button" id="continue-telegram">
+            Продолжить →
+        </button>
+
+    </div>
+</section>
+
+         <!-- ЭКРАН 4 -->
+<section class="screen day-screen">
+    <div class="day-content">
+
+        <div class="progress">04 / 18</div>
+
+        <h2>А теперь вспомним один особенный день ❤️</h2>
+
+        <p class="day-intro">
+    <strong>15.07.2025</strong><br>
+    День, когда я впервые пришёл к тебе домой,
+    а потом мы вместе поехали в другой город.
+</p>
+
+        <div class="question-block" id="film-question">
+
+            <h3>Какой фильм мы тогда смотрели? 🎬</h3>
+
+            <div class="film-options">
+
+                <button class="film-option" data-answer="correct">
+    Антарктида
+</button>
+
+<button class="film-option" data-answer="wrong">
+    Дьявол носит Prada
+</button>
+
+<button class="film-option" data-answer="wrong">
+    Астрал: Возвращение дьявола
+</button>
+
+            </div>
+
+            <p class="film-message" id="film-message"></p>
+
+        </div>
+
+
+        <div class="day-photos" id="day-photos">
+
+            <div class="photo-wrapper">
+                <img
+                    src="images/screen3-photo1.jpg"
+                    alt="Воспоминание с того дня"
+                >
+            </div>
+
+            <p class="photo-caption">
+                Один из тех дней, которые хочется сохранить в памяти ❤️
+            </p>
+
+            <div class="photo-wrapper">
+                <img
+                    src="images/screen3-photo2.jpg"
+                    alt="Воспоминание с того дня"
+                >
+            </div>
+
+            <div class="photo-wrapper">
+                <img
+                    src="images/screen3-photo3.jpg"
+                    alt="Воспоминание с того дня"
+                >
+            </div>
+
+        </div>
+
+
+        <div class="second-question" id="second-question">
+
+            <h3>А что тебе в тот день запомнилось очень хорошо? ❤️</h3>
+
+            <textarea
+                id="memory-answer"
+                placeholder="Напиши свой ответ..."
+            ></textarea>
+
+            <button class="continue-button" id="continue-day">
+                Продолжить →
+            </button>
+
+        </div>
+
+    </div>
+</section>
 
     <script src="js/script.js"></script>
 
 </body>
 
 </html>
+
