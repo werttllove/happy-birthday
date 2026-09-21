@@ -1,47 +1,95 @@
-/* ===== ОСНОВНОЕ СЕРДЦЕ ===== */
+/* ===== ОСНОВНОЙ СТИЛЬ ===== */
 
-.heart {
-    width: 80px;
-    height: 80px;
-    background: #ff4d6d;
-    position: relative;
-    transform: rotate(-45deg);
-    margin: 100px auto;
-    animation: heartbeat 1.2s infinite ease-in-out;
-    box-shadow: 0 0 30px rgba(255, 77, 109, 0.6);
+* {
+    box-sizing: border-box;
 }
 
-.heart::before,
-.heart::after {
-    content: "";
-    width: 80px;
-    height: 80px;
-    background: #ff4d6d;
+body {
+    margin: 0;
+    background: #fff0f5;
+    font-family: Georgia, serif;
+    color: #5c3040;
+}
+
+
+/* ===== ГЛАВНЫЙ ЭКРАН ===== */
+
+.welcome-screen {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* ===== СОДЕРЖИМОЕ ===== */
+
+.welcome-content {
+    max-width: 700px;
+}
+
+
+/* ===== ЗАГОЛОВОК ===== */
+
+.welcome-content h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+
+/* ===== ТЕКСТ ===== */
+
+.welcome-content p {
+    font-size: 22px;
+    line-height: 1.6;
+
+    margin-bottom: 45px;
+}
+
+
+/* ===== СЕРДЕЧКО ===== */
+
+.start-button {
+    width: 100px;
+    height: 100px;
+
+    border: none;
     border-radius: 50%;
-    position: absolute;
+
+    background: #ff6f91;
+
+    font-size: 50px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(255, 105, 140, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.heart::before {
-    top: -40px;
-    left: 0;
+
+/* Наведение мышки */
+
+.start-button:hover {
+    transform: scale(1.12);
+
+    box-shadow:
+        0 15px 40px rgba(255, 105, 140, 0.5);
 }
 
-.heart::after {
-    top: 0;
-    left: 40px;
-}
 
+/* Нажатие */
 
-/* ===== АНИМАЦИЯ ===== */
-
-@keyframes heartbeat {
-    0%, 100% {
-        transform: rotate(-45deg) scale(1);
-    }
-
-    50% {
-        transform: rotate(-45deg) scale(1.12);
-    }
+.start-button:active {
+    transform: scale(0.95);
 }
 
 
@@ -49,31 +97,18 @@
 
 @media (max-width: 600px) {
 
-    h1 {
-        font-size: 40px;
+    .welcome-content h1 {
+        font-size: 38px;
     }
 
-    .heart {
-        width: 60px;
-        height: 60px;
-        margin: 60px auto;
+    .welcome-content p {
+        font-size: 19px;
     }
 
-    .heart::before,
-    .heart::after {
-        width: 60px;
-        height: 60px;
-    }
+    .start-button {
+        width: 85px;
+        height: 85px;
 
-    .heart::before {
-        top: -30px;
+        font-size: 42px;
     }
-
-    .heart::after {
-        left: 30px;
-    }
-}
-
-body {
-    background: #b51e50;
 }
