@@ -102,22 +102,22 @@ body {
 
 @media (max-width: 600px) {
 
-.welcome-content {
-    transform: translateY(-50px);
-}
+    .welcome-content {
+        transform: translateY(-50px);
+    }
 
-.welcome-content h1 {
-    white-space: nowrap;
-}
+    .welcome-content h1 {
+        font-size: 32px;
+        white-space: nowrap;
+    }
 
     .welcome-content p {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .start-button {
         width: 85px;
         height: 85px;
-
         font-size: 42px;
     }
 }
