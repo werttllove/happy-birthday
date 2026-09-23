@@ -1470,3 +1470,1714 @@ body {
         margin-bottom: 50px;
     }
 }
+
+/* =========================
+   SCREEN 11 — GRADUATION
+========================= */
+
+.graduation-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.graduation-content {
+    width: 100%;
+    max-width: 750px;
+}
+
+.graduation-content h2 {
+    font-size: 38px;
+    margin: 25px 0 20px;
+}
+
+.graduation-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.graduation-memory {
+    margin-bottom: 55px;
+}
+
+.graduation-photo {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 105, 140, 0.2);
+}
+
+.graduation-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+    object-fit: contain;
+}
+
+.graduation-comment {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto 0;
+    max-width: 650px;
+}
+
+.graduation-video {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 105, 140, 0.2);
+}
+
+.graduation-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+    object-fit: contain;
+}
+
+.graduation-final-memory {
+    margin-bottom: 65px;
+}
+
+.graduation-question {
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.graduation-question h3 {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.graduation-question textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    padding: 15px;
+    border: 2px solid #ffd1dc;
+    border-radius: 15px;
+    background: #fff;
+    color: #5c3040;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    resize: vertical;
+    outline: none;
+}
+
+.graduation-question textarea:focus {
+    border-color: #ff9eb5;
+}
+
+@media (max-width: 600px) {
+
+    .graduation-screen {
+        padding: 35px 15px;
+    }
+
+    .graduation-content h2 {
+        font-size: 30px;
+    }
+
+    .graduation-intro {
+        font-size: 18px;
+    }
+
+    .graduation-comment {
+        font-size: 17px;
+    }
+
+    .graduation-question h3 {
+        font-size: 21px;
+    }
+}
+
+/* =========================
+   SCREEN 12 — RANDOM PHOTOS
+========================= */
+
+.random2-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.random2-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.random2-content h2 {
+    font-size: 38px;
+    margin: 25px 0 20px;
+}
+
+.random2-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+/* ГАЛЕРЕЯ */
+
+.random2-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+    margin-bottom: 60px;
+}
+
+.random2-card {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 10px 30px rgba(255, 105, 140, 0.12);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.random2-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 105, 140, 0.2);
+}
+
+.random2-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.random2-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 15px 5px 8px;
+}
+
+/* ВОПРОС */
+
+.random2-question {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+}
+
+.random2-question h3 {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.random2-question textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    padding: 15px;
+    border: 2px solid #ffd1dc;
+    border-radius: 15px;
+    background: #fff;
+    color: #5c3040;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    resize: vertical;
+    outline: none;
+}
+
+.random2-question textarea:focus {
+    border-color: #ff9eb5;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+
+@media (max-width: 600px) {
+
+    .random2-screen {
+        padding: 35px 15px;
+    }
+
+    .random2-content h2 {
+        font-size: 30px;
+    }
+
+    .random2-intro {
+        font-size: 18px;
+    }
+
+    .random2-gallery {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .random2-card p {
+        font-size: 17px;
+    }
+
+    .random2-question h3 {
+        font-size: 21px;
+    }
+}
+
+/* =========================
+   SCREEN 13 — MEMORY QUIZ
+========================= */
+
+.memory-quiz-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.memory-quiz-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+.memory-quiz-content h2 {
+    font-size: 38px;
+    margin: 25px 0 20px;
+}
+
+.memory-quiz-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0 auto 45px;
+    max-width: 650px;
+}
+
+
+/* =========================
+   ШАГ
+========================= */
+
+.memory-step {
+    display: none;
+}
+
+.memory-step.active {
+    display: block;
+}
+
+
+/* =========================
+   ФОТО
+========================= */
+
+.memory-photo {
+    width: 100%;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 105, 140, 0.2);
+}
+
+.memory-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   НОМЕР
+========================= */
+
+.memory-number {
+    font-size: 16px;
+    opacity: 0.65;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   ВОПРОС
+========================= */
+
+.memory-step h3 {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ВАРИАНТЫ
+========================= */
+
+.memory-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.memory-option {
+    width: 100%;
+    padding: 16px 20px;
+
+    border: 2px solid #ffd1dc;
+    border-radius: 15px;
+
+    background: #ffffff;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.memory-option:hover {
+    transform: translateY(-2px);
+    background: #fff0f5;
+}
+
+
+/* =========================
+   РЕЗУЛЬТАТ
+========================= */
+
+.memory-result {
+    min-height: 28px;
+    margin: 20px 0 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ОТКРЫТЫЙ ВОПРОС
+========================= */
+
+#memory-open-answer {
+    display: block;
+
+    width: 100%;
+    min-height: 140px;
+
+    padding: 15px;
+
+    border: 2px solid #ffd1dc;
+    border-radius: 15px;
+
+    background: #ffffff;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    resize: vertical;
+    outline: none;
+}
+
+#memory-open-answer:focus {
+    border-color: #ff9eb5;
+}
+
+
+/* =========================
+   ФИНАЛ
+========================= */
+
+.memory-finish {
+    display: none;
+    padding: 40px 20px;
+}
+
+.finish-heart {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.memory-finish h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.memory-finish p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .memory-quiz-screen {
+        padding: 35px 15px;
+    }
+
+    .memory-quiz-content h2 {
+        font-size: 30px;
+    }
+
+    .memory-quiz-intro {
+        font-size: 18px;
+    }
+
+    .memory-step h3 {
+        font-size: 21px;
+    }
+
+    .memory-option {
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .memory-finish h3 {
+        font-size: 26px;
+    }
+}
+
+/* =========================
+   SCREEN 14 — PHOTO ALBUM
+========================= */
+
+.album-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.album-content {
+    width: 100%;
+    max-width: 850px;
+}
+
+.album-content h2 {
+    font-size: 38px;
+    margin: 25px 0 20px;
+}
+
+.album-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto 60px;
+}
+
+
+/* ЛИНИЯ АЛЬБОМА */
+
+.album-line {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+/* ВЕРТИКАЛЬНАЯ ЛИНИЯ */
+
+.album-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 2px;
+
+    background: #ffd1dc;
+
+    transform: translateX(-50%);
+}
+
+
+/* КАРТОЧКА */
+
+.album-card {
+    position: relative;
+
+    width: 65%;
+    margin-bottom: 45px;
+
+    padding: 12px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(255, 105, 140, 0.15);
+
+    z-index: 2;
+
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: scale(1.02) rotate(0deg);
+}
+
+.album-card-left {
+    margin-right: auto;
+    transform: rotate(-2deg);
+}
+
+.album-card-right {
+    margin-left: auto;
+    transform: rotate(2deg);
+}
+
+
+/* ФОТО */
+
+.album-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+}
+
+
+/* ПОДПИСЬ */
+
+.album-card p {
+    margin: 15px 8px 8px;
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* СЕРДЕЧКО МЕЖДУ ФОТО */
+
+.album-dot {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    margin: -10px auto 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f5;
+
+    color: #ff6f91;
+
+    font-size: 20px;
+
+    z-index: 3;
+}
+
+
+/* ФИНАЛ */
+
+.album-finish {
+    max-width: 650px;
+
+    margin: 70px auto 20px;
+
+    padding: 35px 25px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 22px;
+}
+
+.album-heart {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.album-finish h3 {
+    font-size: 28px;
+    margin: 10px 0 15px;
+}
+
+.album-finish p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+
+@media (max-width: 600px) {
+
+    .album-screen {
+        padding: 35px 15px;
+    }
+
+    .album-content h2 {
+        font-size: 30px;
+    }
+
+    .album-intro {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    .album-line::before {
+        left: 50%;
+    }
+
+    .album-card {
+        width: 82%;
+    }
+
+    .album-card-left {
+        transform: rotate(-1.5deg);
+    }
+
+    .album-card-right {
+        transform: rotate(1.5deg);
+    }
+
+    .album-card p {
+        font-size: 16px;
+    }
+
+    .album-finish {
+        padding: 30px 20px;
+    }
+
+    .album-finish h3 {
+        font-size: 24px;
+    }
+
+    .album-finish p {
+        font-size: 17px;
+    }
+}
+
+/* =========================
+   SCREEN 15 — WALKS
+========================= */
+
+.walks-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.walks-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.walks-content h2 {
+    font-size: 38px;
+    margin: 25px 0 20px;
+}
+
+.walks-intro {
+    max-width: 700px;
+    margin: 0 auto 65px;
+
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   STORIES
+========================= */
+
+.walks-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.walk-story {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    text-align: left;
+}
+
+.walk-story-reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.walk-photo {
+    width: 52%;
+    flex-shrink: 0;
+
+    overflow: hidden;
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(255, 105, 140, 0.18);
+}
+
+.walk-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+.walk-photo:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.walk-story-text {
+    flex: 1;
+}
+
+.walk-story-text span {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 15px;
+
+    color: #ff6f91;
+
+    letter-spacing: 2px;
+}
+
+.walk-story-text p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FINISH
+========================= */
+
+.walks-finish {
+    max-width: 650px;
+
+    margin: 90px auto 20px;
+    padding: 35px 25px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 22px;
+}
+
+.walks-finish-heart {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.walks-finish h3 {
+    font-size: 28px;
+    margin: 10px 0 15px;
+}
+
+.walks-finish p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .walks-screen {
+        padding: 35px 15px;
+    }
+
+    .walks-content h2 {
+        font-size: 30px;
+    }
+
+    .walks-intro {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    .walks-stories {
+        gap: 50px;
+    }
+
+    .walk-story,
+    .walk-story-reverse {
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    .walk-photo {
+        width: 100%;
+    }
+
+    .walk-story-text p {
+        font-size: 17px;
+    }
+
+    .walks-finish {
+        margin-top: 65px;
+        padding: 30px 20px;
+    }
+
+    .walks-finish h3 {
+        font-size: 24px;
+    }
+
+    .walks-finish p {
+        font-size: 17px;
+    }
+}
+
+/* =====================================
+   SCREEN 16 — OUR EVENINGS
+===================================== */
+
+.evening-screen {
+    min-height: 100vh;
+    padding: 50px 20px 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.evening-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+
+/* ПРОГРЕСС */
+
+.evening-content .progress {
+    margin-bottom: 35px;
+}
+
+
+/* ЗАГОЛОВОК */
+
+.evening-content h2 {
+    font-size: 46px;
+    margin: 0 0 25px;
+}
+
+.evening-intro {
+    max-width: 720px;
+    margin: 0 auto 55px;
+
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   СЛАЙДЕР
+===================================== */
+
+.evening-slider {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+
+/* ФОТО */
+
+.evening-photo {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 45px rgba(92, 48, 64, 0.16);
+
+    transition: 0.3s;
+}
+
+.evening-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 760px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================
+   ПОДПИСЬ
+===================================== */
+
+.evening-info {
+    padding: 25px 15px 5px;
+}
+
+#evening-counter {
+    display: block;
+
+    font-size: 16px;
+
+    opacity: 0.65;
+
+    margin-bottom: 15px;
+}
+
+#evening-comment {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   СТРЕЛКИ
+===================================== */
+
+.evening-navigation {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.evening-navigation button {
+    width: 58px;
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ff6f91;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.evening-navigation button:hover {
+    transform: scale(1.08);
+}
+
+.evening-navigation button:active {
+    transform: scale(0.95);
+}
+
+
+/* =====================================
+   НИЖНЯЯ ЧАСТЬ
+===================================== */
+
+.evening-bottom {
+    max-width: 700px;
+
+    margin: 85px auto 0;
+
+    padding: 45px 25px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.evening-small-heart {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.evening-bottom h3 {
+    font-size: 31px;
+
+    line-height: 1.4;
+
+    margin: 0 0 20px;
+}
+
+.evening-bottom p {
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin: 0 0 30px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .evening-screen {
+        padding: 35px 15px 60px;
+    }
+
+    .evening-content h2 {
+        font-size: 32px;
+    }
+
+    .evening-intro {
+        font-size: 18px;
+
+        line-height: 1.6;
+
+        margin-bottom: 40px;
+    }
+
+    .evening-photo {
+        border-radius: 20px;
+    }
+
+    #evening-comment {
+        font-size: 18px;
+    }
+
+    .evening-navigation {
+        margin-top: 20px;
+    }
+
+    .evening-navigation button {
+        width: 52px;
+        height: 52px;
+
+        font-size: 22px;
+    }
+
+    .evening-bottom {
+        margin-top: 60px;
+
+        padding: 35px 20px;
+
+        border-radius: 25px;
+    }
+
+    .evening-bottom h3 {
+        font-size: 26px;
+    }
+
+    .evening-bottom p {
+        font-size: 18px;
+    }
+
+    .evening-small-heart {
+        font-size: 40px;
+    }
+}
+
+/* =====================================
+   SCREEN 17 — FIRST DANCE
+===================================== */
+
+.dance-screen {
+    min-height: 100vh;
+
+    padding: 50px 20px 80px;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.dance-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+
+/* ПРОГРЕСС */
+
+.dance-content .progress {
+    margin-bottom: 35px;
+}
+
+
+/* ЗАГОЛОВОК */
+
+.dance-content h2 {
+    font-size: 46px;
+
+    margin: 0 0 25px;
+}
+
+.dance-intro {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   VIDEO
+===================================== */
+
+.dance-video-wrapper {
+    width: 100%;
+
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: #000;
+
+    box-shadow:
+        0 20px 60px rgba(92, 48, 64, 0.25);
+}
+
+.dance-video-wrapper video {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 700px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================
+   ТЕКСТ ПОСЛЕ ВИДЕО
+===================================== */
+
+.dance-text {
+    margin: 55px auto 0;
+
+    max-width: 650px;
+}
+
+.dance-heart {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.dance-text h3 {
+    font-size: 34px;
+
+    margin: 0 0 18px;
+}
+
+.dance-text p {
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =====================================
+   ВОПРОС
+===================================== */
+
+.dance-question {
+    max-width: 700px;
+
+    margin: 70px auto 0;
+
+    padding: 40px 25px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.dance-question h3 {
+    font-size: 28px;
+
+    line-height: 1.4;
+
+    margin: 0 0 25px;
+}
+
+.dance-question textarea {
+    display: block;
+
+    width: 100%;
+
+    min-height: 130px;
+
+    resize: vertical;
+
+    padding: 18px;
+
+    border: 2px solid #ffd0dc;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    outline: none;
+}
+
+.dance-question textarea:focus {
+    border-color: #ff6f91;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .dance-screen {
+        padding: 35px 15px 60px;
+    }
+
+    .dance-content h2 {
+        font-size: 32px;
+    }
+
+    .dance-intro {
+        font-size: 18px;
+
+        line-height: 1.6;
+
+        margin-bottom: 40px;
+    }
+
+    .dance-video-wrapper {
+        border-radius: 20px;
+    }
+
+    .dance-heart {
+        font-size: 40px;
+    }
+
+    .dance-text h3 {
+        font-size: 28px;
+    }
+
+    .dance-text p {
+        font-size: 18px;
+    }
+
+    .dance-question {
+        margin-top: 55px;
+
+        padding: 30px 18px;
+
+        border-radius: 25px;
+    }
+
+    .dance-question h3 {
+        font-size: 24px;
+    }
+
+    .dance-question textarea {
+        font-size: 17px;
+
+        min-height: 120px;
+    }
+}
+
+/* =====================================
+   SCREEN 18 — FINAL
+===================================== */
+
+.final-screen {
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px 80px;
+}
+
+.final-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 800px;
+}
+
+
+/* =====================================
+   ПРОГРЕСС
+===================================== */
+
+.final-content .progress {
+    margin-bottom: 35px;
+}
+
+
+/* =====================================
+   ГЛАВНОЕ СЕРДЦЕ
+===================================== */
+
+.final-heart {
+    font-size: 70px;
+
+    margin-bottom: 25px;
+
+    animation: finalHeart 2s ease-in-out infinite;
+}
+
+@keyframes finalHeart {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+
+/* =====================================
+   ЗАГОЛОВОК
+===================================== */
+
+.final-content h2 {
+    font-size: 50px;
+
+    line-height: 1.25;
+
+    margin: 0 0 25px;
+}
+
+.final-intro {
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+}
+
+
+/* =====================================
+   КНОПКА
+===================================== */
+
+.final-open-button {
+    border: none;
+
+    padding: 16px 32px;
+
+    border-radius: 18px;
+
+    background: #ff6f91;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(255, 105, 140, 0.25);
+
+    transition: 0.3s;
+}
+
+.final-open-button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(255, 105, 140, 0.35);
+}
+
+
+/* =====================================
+   ПИСЬМО
+===================================== */
+
+.final-letter {
+
+    display: none;
+
+    max-width: 700px;
+
+    margin: 55px auto 0;
+
+    padding: 45px 40px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    box-shadow:
+        0 20px 60px rgba(92, 48, 64, 0.12);
+
+    text-align: left;
+
+    animation: letterAppear 1s ease forwards;
+}
+
+.final-letter.visible {
+    display: block;
+}
+
+@keyframes letterAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+.final-letter p {
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    margin: 0 0 24px;
+}
+
+
+/* =====================================
+   ПОСЛЕДНЯЯ ФРАЗА
+===================================== */
+
+.final-last-text {
+    text-align: center;
+
+    font-size: 27px !important;
+
+    font-weight: bold;
+
+    margin-top: 40px !important;
+
+    color: #d94f72;
+}
+
+
+/* =====================================
+   ПОДПИСЬ
+===================================== */
+
+.final-signature {
+    text-align: center;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ffd0dc;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   ЛЕТАЮЩИЕ СЕРДЕЧКИ
+===================================== */
+
+.final-hearts {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.final-floating-heart {
+    position: absolute;
+
+    bottom: -50px;
+
+    font-size: 25px;
+
+    opacity: 0;
+
+    animation: floatHeart 5s linear forwards;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform:
+            translateY(-100vh)
+            rotate(25deg);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .final-screen {
+        padding: 40px 15px 60px;
+
+        align-items: flex-start;
+    }
+
+    .final-content {
+        margin-top: 10px;
+    }
+
+    .final-heart {
+        font-size: 55px;
+
+        margin-bottom: 20px;
+    }
+
+    .final-content h2 {
+        font-size: 34px;
+    }
+
+    .final-intro {
+        font-size: 18px;
+
+        line-height: 1.6;
+    }
+
+    .final-open-button {
+        font-size: 17px;
+
+        padding: 14px 24px;
+    }
+
+    .final-letter {
+        margin-top: 40px;
+
+        padding: 30px 22px;
+
+        border-radius: 24px;
+    }
+
+    .final-letter p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .final-last-text {
+        font-size: 23px !important;
+    }
+
+    .final-signature {
+        font-size: 20px;
+    }
+
+}

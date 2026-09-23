@@ -410,3 +410,463 @@ lastCallContinue.addEventListener("click", function() {
     });
 
 });
+
+// =========================
+// SCREEN 11 — GRADUATION
+// =========================
+
+const graduationAnswer =
+    document.getElementById("graduation-answer");
+
+const continueGraduation =
+    document.getElementById("continue-graduation");
+
+continueGraduation.addEventListener("click", function() {
+
+    const answer = graduationAnswer.value.trim();
+
+    if (answer === "") {
+        graduationAnswer.focus();
+        return;
+    }
+
+    showScreen(12);
+});
+
+// =========================
+// SCREEN 12 — RANDOM PHOTOS
+// =========================
+
+const random2Answer =
+    document.getElementById("random2-answer");
+
+const random2Continue =
+    document.getElementById("random2-continue");
+
+random2Continue.addEventListener("click", function() {
+
+    const answer = random2Answer.value.trim();
+
+    if (answer === "") {
+        random2Answer.focus();
+        return;
+    }
+
+    showScreen(13);
+});
+
+// =========================
+// SCREEN 13 — MEMORY QUIZ
+// =========================
+
+const memoryStep1 =
+    document.getElementById("memory-step-1");
+
+const memoryStep2 =
+    document.getElementById("memory-step-2");
+
+const memoryStep3 =
+    document.getElementById("memory-step-3");
+
+const memoryFinish =
+    document.getElementById("memory-finish");
+
+
+const memoryResult1 =
+    document.getElementById("memory-result-1");
+
+const memoryResult2 =
+    document.getElementById("memory-result-2");
+
+const memoryResult3 =
+    document.getElementById("memory-result-3");
+
+
+const memoryOptions1 =
+    memoryStep1.querySelectorAll(".memory-option");
+
+const memoryOptions2 =
+    memoryStep2.querySelectorAll(".memory-option");
+
+
+const memoryOpenAnswer =
+    document.getElementById("memory-open-answer");
+
+const memoryOpenButton =
+    document.getElementById("memory-open-button");
+
+const memoryContinue =
+    document.getElementById("memory-continue");
+
+const memoryQuizTitle =
+    document.getElementById("memory-quiz-title");
+
+const memoryQuizIntro =
+    document.getElementById("memory-quiz-intro");
+
+
+// =========================
+// ВОПРОС 1
+// =========================
+
+memoryOptions1.forEach(function(option, index) {
+
+    option.addEventListener("click", function() {
+
+        if (index === 1) {
+
+            memoryResult1.textContent =
+                "Правильно ❤️ Именно закупка на последний звонок.";
+
+            option.style.background = "#ffe1ea";
+
+            setTimeout(function() {
+
+                memoryStep1.classList.remove("active");
+                memoryStep2.classList.add("active");
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "instant"
+                });
+
+            }, 900);
+
+        } else {
+
+            memoryResult1.textContent =
+                "Не-а 😄 Попробуй ещё раз.";
+        }
+
+    });
+
+});
+
+
+// =========================
+// ВОПРОС 2
+// =========================
+
+memoryOptions2.forEach(function(option, index) {
+
+    option.addEventListener("click", function() {
+
+        if (index === 2) {
+
+            memoryResult2.textContent =
+                "Правильно ❤️ На даче собирали клубнику.";
+
+            option.style.background = "#ffe1ea";
+
+            setTimeout(function() {
+
+                memoryStep2.classList.remove("active");
+                memoryStep3.classList.add("active");
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "instant"
+                });
+
+            }, 900);
+
+        } else {
+
+            memoryResult2.textContent =
+                "Не-а 😄 Вспомни ещё раз.";
+
+        }
+
+    });
+
+});
+
+
+// =========================
+// ВОПРОС 3
+// =========================
+
+memoryOpenButton.addEventListener("click", function() {
+
+    const answer =
+        memoryOpenAnswer.value.trim();
+
+    if (answer === "") {
+
+        memoryOpenAnswer.focus();
+
+        return;
+    }
+
+    memoryResult3.textContent =
+        "Мне интересно, что именно ты вспомнила ❤️";
+
+    memoryOpenButton.style.display = "none";
+
+    setTimeout(function() {
+
+     memoryStep3.classList.remove("active");
+memoryFinish.style.display = "block";
+
+memoryQuizTitle.style.display = "none";
+memoryQuizIntro.style.display = "none";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+
+    }, 1000);
+
+});
+
+
+// =========================
+// ПЕРЕХОД НА 14 / 18
+// =========================
+
+memoryContinue.addEventListener("click", function() {
+
+    showScreen(14);
+
+});
+
+// =========================
+// SCREEN 14 — PHOTO ALBUM
+// =========================
+
+const albumContinue =
+    document.getElementById("album-continue");
+
+albumContinue.addEventListener("click", function() {
+
+    showScreen(15);
+
+});
+
+// =========================
+// SCREEN 15 — WALKS
+// =========================
+
+const walksContinue =
+    document.getElementById("walks-continue");
+
+walksContinue.addEventListener("click", function() {
+
+    showScreen(16);
+
+});
+
+// =====================================
+// SCREEN 16 — OUR EVENINGS
+// =====================================
+
+const eveningPhotos = [
+
+    {
+        src: "images/evening-1.jpg",
+        comment: "Один из тех моментов, которые хочется сохранить просто потому, что нам тогда было хорошо. ❤️"
+    },
+
+    {
+        src: "images/evening-2.jpg",
+        comment: "Красивый вечер, хорошее настроение и человек рядом — иногда больше ничего и не нужно."
+    },
+
+    {
+        src: "images/evening-3.jpg",
+        comment: "Некоторые фотографии вообще не требуют объяснений. Достаточно просто посмотреть на них и всё вспомнить."
+    },
+
+    {
+        src: "images/evening-4.jpg",
+        comment: "Ещё один наш маленький момент, который со временем стал частью большой истории. ❤️"
+    },
+
+    {
+        src: "images/evening-5.jpg",
+        comment: "Даже обычная фотография иногда может вернуть в конкретный вечер и заставить вспомнить всё до мелочей."
+    },
+
+    {
+        src: "images/evening-7.jpg",
+        comment: "И таких моментов за это время накопилось уже действительно много."
+    },
+
+    {
+        src: "images/evening-6.jpg",
+        comment: "И эта фотография будет не последняя за этот сентябрь❤️"
+    }
+
+];
+
+
+let currentEveningPhoto = 0;
+
+
+const eveningPhoto =
+    document.getElementById("evening-photo");
+
+const eveningComment =
+    document.getElementById("evening-comment");
+
+const eveningCounter =
+    document.getElementById("evening-counter");
+
+const eveningNext =
+    document.getElementById("evening-next");
+
+const eveningPrev =
+    document.getElementById("evening-prev");
+
+
+function updateEveningPhoto() {
+
+    eveningPhoto.src =
+        eveningPhotos[currentEveningPhoto].src;
+
+    eveningComment.textContent =
+        eveningPhotos[currentEveningPhoto].comment;
+
+    eveningCounter.textContent =
+        `${currentEveningPhoto + 1} / ${eveningPhotos.length}`;
+
+}
+
+
+/* ВПЕРЁД */
+
+eveningNext.addEventListener("click", function() {
+
+    currentEveningPhoto++;
+
+    if (
+        currentEveningPhoto >=
+        eveningPhotos.length
+    ) {
+        currentEveningPhoto = 0;
+    }
+
+    updateEveningPhoto();
+
+});
+
+
+/* НАЗАД */
+
+eveningPrev.addEventListener("click", function() {
+
+    currentEveningPhoto--;
+
+    if (currentEveningPhoto < 0) {
+
+        currentEveningPhoto =
+            eveningPhotos.length - 1;
+
+    }
+
+    updateEveningPhoto();
+
+});
+
+
+/* ПРОДОЛЖИТЬ */
+
+const continueEvening =
+    document.getElementById("continue-evening");
+
+
+continueEvening.addEventListener("click", function() {
+
+    showScreen(17);
+
+});
+
+// =====================================
+// SCREEN 17 — FIRST DANCE
+// =====================================
+
+const danceAnswer =
+    document.getElementById("dance-answer");
+
+const continueDance =
+    document.getElementById("continue-dance");
+
+
+continueDance.addEventListener("click", function() {
+
+    const answer =
+        danceAnswer.value.trim();
+
+    if (answer === "") {
+
+        danceAnswer.focus();
+
+        return;
+    }
+
+    showScreen(18);
+
+});
+
+// =====================================
+// SCREEN 18 — FINAL
+// =====================================
+
+const finalOpen =
+    document.getElementById("final-open");
+
+const finalLetter =
+    document.getElementById("final-letter");
+
+const finalHearts =
+    document.getElementById("final-hearts");
+
+
+finalOpen.addEventListener("click", function() {
+
+    finalLetter.classList.add("visible");
+
+    finalOpen.style.display = "none";
+
+    createFinalHearts();
+
+    setTimeout(function() {
+
+        finalLetter.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }, 200);
+
+});
+
+
+function createFinalHearts() {
+
+    for (let i = 0; i < 18; i++) {
+
+        const heart =
+            document.createElement("div");
+
+        heart.classList.add(
+            "final-floating-heart"
+        );
+
+        heart.textContent = "❤️";
+
+        heart.style.left =
+            Math.random() * 100 + "%";
+
+        heart.style.animationDelay =
+            Math.random() * 3 + "s";
+
+        heart.style.fontSize =
+            (18 + Math.random() * 25) + "px";
+
+        finalHearts.appendChild(heart);
+
+    }
+
+}
