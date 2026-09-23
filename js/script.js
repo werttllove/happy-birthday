@@ -7,8 +7,12 @@ function showScreen(number) {
     });
 
     screens[number].classList.add("active");
-}
 
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
+}
 
 /* ===== ГЛАВНЫЙ ЭКРАН ===== */
 
@@ -48,28 +52,28 @@ checkDateButton.addEventListener("click", function() {
 
 const photos = [
     {
-        src: "images/photo1.jpg",
+        src: "images/photo3.jpg",
         comment: "Кажется, всё начиналось довольно просто..."
     },
 
     {
-        src: "images/photo2.jpg",
-        comment: "А потом пошли первые предложения, намёки и разговоры о том, чтобы сидеть вместе..."
-    },
-
-    {
-        src: "images/photo3.jpg",
-        comment: "Ну а без этого никак 😂 Кажется, мы с самого начала умели нормально общаться."
-    },
-
-    {
         src: "images/photo4.jpg",
-        comment: "Вот примерно с этого всё и началось. Несколько сообщений, которые в итоге привели нас сюда."
+        comment: "Эту ситуацию мы помним оба"
     },
 
     {
         src: "images/photo5.jpg",
-        comment: "А ещё мы почти сразу успели завести ребёнка 😂❤️ Не спрашивай, как мы до этого дошли настолько быстро..."
+        comment: "Кажется, мы с самого начала умели нормально общаться."
+    },
+
+    {
+        src: "images/photo2.jpg",
+        comment: "Вот примерно с этого всё и началось. Несколько сообщений, которые в итоге привели нас сюда."
+    },
+
+    {
+        src: "images/photo1.jpg",
+        comment: "А это наш певый опыт с ребёнком"
     }
 ];
 
@@ -200,5 +204,209 @@ continueDay.addEventListener("click", function() {
     }
 
     showScreen(5);
+
+});
+
+/* ===== ЭКРАН 5 — ДЕНЬ РОЖДЕНИЯ ===== */
+
+const birthdayAnswer =
+    document.getElementById("birthday-answer");
+
+const continueBirthday =
+    document.getElementById("continue-birthday");
+
+
+continueBirthday.addEventListener("click", function() {
+
+    const answer = birthdayAnswer.value.trim();
+
+    if (answer === "") {
+
+        birthdayAnswer.focus();
+
+        return;
+
+    }
+
+    showScreen(6);
+
+});
+
+/* ===== ЭКРАН 6 — 31.10.2025 ===== */
+
+const octoberAnswer =
+    document.getElementById("october-answer");
+
+const continueOctober =
+    document.getElementById("continue-october");
+
+
+continueOctober.addEventListener("click", function() {
+
+    const answer = octoberAnswer.value.trim();
+
+    if (answer === "") {
+
+        octoberAnswer.focus();
+
+        return;
+
+    }
+
+    showScreen(7);
+
+});
+
+/* ===== ЭКРАН 7 — НОВЫЙ ГОД ===== */
+
+const newyearAnswer =
+    document.getElementById("newyear-answer");
+
+const continueNewyear =
+    document.getElementById("continue-newyear");
+
+
+continueNewyear.addEventListener("click", function() {
+
+    const answer = newyearAnswer.value.trim();
+
+    if (answer === "") {
+
+        newyearAnswer.focus();
+
+        return;
+
+    }
+
+    showScreen(8);
+
+});
+
+/* ===== ЭКРАН 8 — ГОД ОТНОШЕНИЙ ===== */
+
+const anniversaryAnswer =
+    document.getElementById("anniversary-answer");
+
+const continueAnniversary =
+    document.getElementById("continue-anniversary");
+
+
+continueAnniversary.addEventListener("click", function() {
+
+    const answer = anniversaryAnswer.value.trim();
+
+    if (answer === "") {
+
+        anniversaryAnswer.focus();
+
+        return;
+
+    }
+
+    showScreen(9);
+
+});
+
+// =========================
+// ЭКРАН 09 — РАНДОМНЫЕ МОМЕНТЫ
+// =========================
+
+const randomPhotos = [
+    {
+        src: "images/random-1.jpg",
+        comment: "Просто один из тех моментов, которые хочется сохранить."
+    },
+    {
+        src: "images/random-2.jpg",
+        comment: "Прогулки, разговоры и места, которые становятся особенными благодаря человеку рядом."
+    },
+    {
+        src: "images/random-3.jpg",
+        comment: "Зима тоже оставила после себя немало красивых воспоминаний. ❄️"
+    },
+    {
+        src: "images/random-4.jpg",
+        comment: "Не все наши моменты были только про нас двоих. Иногда рядом были ещё люди, смех и целые истории."
+    },
+    {
+        src: "images/random-5.jpg",
+        comment: "И таких моментов за это время накопилось действительно очень много. ❤️"
+    }
+];
+
+let currentRandomPhoto = 0;
+
+const randomPhoto = document.getElementById("random-photo");
+const randomComment = document.getElementById("random-comment");
+const randomCounter = document.getElementById("random-counter");
+
+const randomNext = document.getElementById("random-next");
+const randomPrev = document.getElementById("random-prev");
+
+function updateRandomPhoto() {
+
+    randomPhoto.src = randomPhotos[currentRandomPhoto].src;
+
+    randomComment.textContent =
+        randomPhotos[currentRandomPhoto].comment;
+
+    randomCounter.textContent =
+        `${currentRandomPhoto + 1} / ${randomPhotos.length}`;
+}
+
+randomNext.addEventListener("click", function() {
+
+    currentRandomPhoto++;
+
+    if (currentRandomPhoto >= randomPhotos.length) {
+        currentRandomPhoto = 0;
+    }
+
+    updateRandomPhoto();
+});
+
+randomPrev.addEventListener("click", function() {
+
+    currentRandomPhoto--;
+
+    if (currentRandomPhoto < 0) {
+        currentRandomPhoto = randomPhotos.length - 1;
+    }
+
+    updateRandomPhoto();
+});
+
+
+// Переход на экран 10
+
+const randomContinue =
+    document.getElementById("random-continue");
+
+randomContinue.addEventListener("click", function() {
+
+    showScreen(10);
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+// =========================
+// ЭКРАН 10 — ПОСЛЕДНИЙ ЗВОНОК
+// =========================
+
+const lastCallContinue =
+    document.getElementById("last-call-continue");
+
+lastCallContinue.addEventListener("click", function() {
+
+    showScreen(11);
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
 });

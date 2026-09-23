@@ -609,3 +609,864 @@ body {
 .day-intro strong {
     font-weight: bold;
 }
+
+/* ===== ЭКРАН 5 — ДЕНЬ РОЖДЕНИЯ ===== */
+
+.birthday-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.birthday-content {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.birthday-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.birthday-intro {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.birthday-memory {
+    margin-bottom: 45px;
+}
+
+.birthday-photo {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 15px 40px rgba(120, 60, 80, 0.18);
+}
+
+.birthday-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.birthday-comment {
+    max-width: 550px;
+    margin: 20px auto 0;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.birthday-question {
+    max-width: 600px;
+    margin: 60px auto 20px;
+    padding-top: 20px;
+}
+
+.birthday-question h3 {
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.birthday-question p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#birthday-answer {
+    width: 100%;
+    min-height: 130px;
+    resize: vertical;
+    padding: 15px;
+    margin-top: 15px;
+
+    border: 2px solid #f3a6ba;
+    border-radius: 15px;
+
+    background: white;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    outline: none;
+}
+
+#birthday-answer:focus {
+    border-color: #ff6f91;
+}
+
+
+@media (max-width: 600px) {
+
+    .birthday-screen {
+        padding: 35px 15px;
+    }
+
+    .birthday-content h2 {
+        font-size: 32px;
+    }
+
+    .birthday-intro {
+        font-size: 18px;
+    }
+
+    .birthday-comment {
+        font-size: 18px;
+    }
+
+    .birthday-question h3 {
+        font-size: 22px;
+    }
+
+    .birthday-question p {
+        font-size: 18px;
+    }
+
+}
+
+/* ===== ЭКРАН 6 — 31.10.2025 ===== */
+
+.october-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.october-content {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.october-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.october-intro {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.october-memory {
+    margin-bottom: 45px;
+}
+
+.october-photo {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(120, 60, 80, 0.18);
+}
+
+.october-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.october-comment {
+    max-width: 550px;
+    margin: 20px auto 0;
+
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.october-question {
+    max-width: 600px;
+    margin: 60px auto 20px;
+    padding-top: 20px;
+}
+
+.october-question h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+#october-answer {
+    width: 100%;
+    min-height: 130px;
+
+    resize: vertical;
+
+    padding: 15px;
+    margin-top: 10px;
+
+    border: 2px solid #f3a6ba;
+    border-radius: 15px;
+
+    background: white;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    outline: none;
+}
+
+#october-answer:focus {
+    border-color: #ff6f91;
+}
+
+
+@media (max-width: 600px) {
+
+    .october-screen {
+        padding: 35px 15px;
+    }
+
+    .october-content h2 {
+        font-size: 32px;
+    }
+
+    .october-intro {
+        font-size: 18px;
+    }
+
+    .october-comment {
+        font-size: 18px;
+    }
+
+    .october-question h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* ===== ЭКРАН 7 — НОВЫЙ ГОД ===== */
+
+.newyear-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.newyear-content {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.newyear-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.newyear-intro {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.newyear-memory {
+    margin-bottom: 50px;
+}
+
+.newyear-photo {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(120, 60, 80, 0.18);
+}
+
+.newyear-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.newyear-comment {
+    max-width: 550px;
+    margin: 20px auto 0;
+
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* Последняя фотография */
+
+.newyear-final-memory {
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+
+.newyear-final-memory .newyear-photo {
+    max-width: 600px;
+    box-shadow:
+        0 18px 45px rgba(120, 60, 80, 0.22);
+}
+
+.newyear-final-memory .newyear-comment {
+    font-size: 20px;
+}
+
+
+/* Вопрос */
+
+.newyear-question {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding-top: 10px;
+}
+
+.newyear-question h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+#newyear-answer {
+    width: 100%;
+    min-height: 130px;
+
+    resize: vertical;
+
+    padding: 15px;
+    margin-top: 10px;
+
+    border: 2px solid #f3a6ba;
+    border-radius: 15px;
+
+    background: white;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    outline: none;
+}
+
+#newyear-answer:focus {
+    border-color: #ff6f91;
+}
+
+
+@media (max-width: 600px) {
+
+    .newyear-screen {
+        padding: 35px 15px;
+    }
+
+    .newyear-content h2 {
+        font-size: 29px;
+    }
+
+    .newyear-intro {
+        font-size: 18px;
+    }
+
+    .newyear-comment {
+        font-size: 18px;
+    }
+
+    .newyear-final-memory .newyear-comment {
+        font-size: 18px;
+    }
+
+    .newyear-question h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* ===== ЭКРАН 8 — ГОД ОТНОШЕНИЙ ===== */
+
+.anniversary-screen {
+    min-height: 100vh;
+    padding: 50px 20px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: center;
+}
+
+.anniversary-content {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.anniversary-content h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.anniversary-intro {
+    font-size: 21px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.anniversary-memory {
+    margin-bottom: 55px;
+}
+
+.anniversary-photo {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(120, 60, 80, 0.18);
+}
+
+.anniversary-video {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: black;
+
+    box-shadow:
+        0 18px 45px rgba(120, 60, 80, 0.22);
+}
+
+.anniversary-video video {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 700px;
+}
+
+.anniversary-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 700px;
+
+    object-fit: contain;
+}
+
+.anniversary-comment {
+    max-width: 570px;
+
+    margin: 20px auto 0;
+
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* Последняя фотография */
+
+.anniversary-final-memory {
+    margin-top: 70px;
+    margin-bottom: 75px;
+}
+
+.anniversary-final-memory .anniversary-photo {
+    box-shadow:
+        0 18px 45px rgba(120, 60, 80, 0.22);
+}
+
+.anniversary-final-memory .anniversary-comment {
+    font-size: 20px;
+}
+
+
+/* Вопрос */
+
+.anniversary-question {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    padding-top: 10px;
+}
+
+.anniversary-question h3 {
+    font-size: 27px;
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+}
+
+#anniversary-answer {
+    width: 100%;
+
+    min-height: 130px;
+
+    resize: vertical;
+
+    padding: 15px;
+
+    border: 2px solid #f3a6ba;
+    border-radius: 15px;
+
+    background: white;
+    color: #5c3040;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    outline: none;
+}
+
+#anniversary-answer:focus {
+    border-color: #ff6f91;
+}
+
+
+@media (max-width: 600px) {
+
+    .anniversary-screen {
+        padding: 35px 15px;
+    }
+
+    .anniversary-content h2 {
+        font-size: 32px;
+    }
+
+    .anniversary-intro {
+        font-size: 18px;
+    }
+
+    .anniversary-comment {
+        font-size: 18px;
+    }
+
+    .anniversary-final-memory .anniversary-comment {
+        font-size: 18px;
+    }
+
+    .anniversary-question h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* =========================
+   ЭКРАН 09 — РАНДОМНЫЕ МОМЕНТЫ
+   ========================= */
+
+.random-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.random-content {
+    width: 100%;
+    max-width: 850px;
+}
+
+.random-content h2 {
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.random-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.random-photo {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(92, 48, 64, 0.15);
+}
+
+.random-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.random-comment {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 25px auto;
+    max-width: 700px;
+}
+
+.random-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0 70px;
+}
+
+.random-navigation button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #ff6f91;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.random-navigation button:hover {
+    transform: scale(1.08);
+}
+
+.random-counter {
+    font-size: 18px;
+}
+
+#random-counter {
+    min-width: 45px;
+}
+
+.random-question {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.random-question h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.random-question textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 18px;
+    border: 2px solid #ff9bb2;
+    border-radius: 15px;
+    resize: vertical;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #5c3040;
+    background: white;
+    outline: none;
+}
+
+.random-question textarea:focus {
+    border-color: #ff6f91;
+}
+
+.random-question .continue-button {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .random-screen {
+        padding: 50px 15px;
+    }
+
+    .random-content h2 {
+        font-size: 31px;
+    }
+
+    .random-intro {
+        font-size: 18px;
+    }
+
+    .random-comment {
+        font-size: 18px;
+    }
+
+    .random-question h3 {
+        font-size: 22px;
+    }
+
+    .random-navigation {
+        margin-bottom: 55px;
+    }
+}
+
+/* =========================
+   ЭКРАН 10 — ПОСЛЕДНИЙ ЗВОНОК
+   ========================= */
+
+.last-call-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.last-call-content {
+    width: 100%;
+    max-width: 850px;
+}
+
+.last-call-content h2 {
+    font-size: 44px;
+    margin: 25px 0;
+}
+
+.last-call-intro {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.last-call-memory {
+    margin-bottom: 65px;
+}
+
+.last-call-photo {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(92, 48, 64, 0.15);
+}
+
+.last-call-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.last-call-video {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(92, 48, 64, 0.15);
+    background: #222;
+}
+
+.last-call-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.last-call-comment {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.last-call-question {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.last-call-question h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.last-call-question textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 18px;
+
+    border: 2px solid #ff9bb2;
+    border-radius: 15px;
+
+    resize: vertical;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #5c3040;
+
+    background: white;
+    outline: none;
+}
+
+.last-call-question textarea:focus {
+    border-color: #ff6f91;
+}
+
+.last-call-question .continue-button {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    .last-call-screen {
+        padding: 50px 15px;
+    }
+
+    .last-call-content h2 {
+        font-size: 32px;
+    }
+
+    .last-call-intro {
+        font-size: 18px;
+    }
+
+    .last-call-comment {
+        font-size: 18px;
+    }
+
+    .last-call-question h3 {
+        font-size: 22px;
+    }
+
+    .last-call-memory {
+        margin-bottom: 50px;
+    }
+}
